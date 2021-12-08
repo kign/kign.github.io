@@ -3,8 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <title>Konstantin Ignatiev</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body>
-<P>Testing HTML <code>index</code></P>
+<p>Konstantin's coding samples</p>
+<p>Select technologies or languages below</p>
+<div id="selector">
+    <span>
+        <input class="form-check-input" type="checkbox" id="java">
+        <label class="form-check-label" for="java">
+            #Java
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="python">
+        <label class="form-check-label" for="python">
+            #Python
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="pypi">
+        <label class="form-check-label" for="pypi">
+            #PyPi
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="js">
+        <label class="form-check-label" for="js">
+            #JavaScript
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="ts">
+        <label class="form-check-label" for="ts">
+            #Type Script
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="wasm">
+        <label class="form-check-label" for="wasm">
+            #Web Assembly
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="c">
+        <label class="form-check-label" for="c">
+            #C
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="zig">
+        <label class="form-check-label" for="zig">
+            #Zig
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="sql">
+        <label class="form-check-label" for="sql">
+            #SQL
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="nosql">
+        <label class="form-check-label" for="nosql">
+            #NoSQL
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="flask">
+        <label class="form-check-label" for="flask">
+            #Flask
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="oauth">
+        <label class="form-check-label" for="oauth">
+            #OAuth 2.0
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="jdbc">
+        <label class="form-check-label" for="jdbc">
+            #JDBC
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="react">
+        <label class="form-check-label" for="react">
+            #React
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="antlr">
+        <label class="form-check-label" for="antlr">
+            #Antlr 4
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="javafx">
+        <label class="form-check-label" for="javafx">
+            #JavaFX
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="jni">
+        <label class="form-check-label" for="jni">
+            #JNI
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="pni">&nbsp;<label class="form-check-label" for="pni">
+            #Python C extension
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="teavm">
+        <label class="form-check-label" for="teavm">
+            #TeaVM
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="rest">
+        <label class="form-check-label" for="rest">
+            #RESTful API
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="bootstrap">
+        <label class="form-check-label" for="bootstrap">
+            #Bootstrap
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="jquery">
+        <label class="form-check-label" for="jquery">
+            #jQuery
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="chrome">
+        <label class="form-check-label" for="chrome">
+            #Chrome extension
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="webpack">
+        <label class="form-check-label" for="webpack">
+            #Webpack
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="mnv">
+        <label class="form-check-label" for="mnv">
+            #Maven
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="gradle">
+        <label class="form-check-label" for="gradle">
+            #Gradle
+        </label>
+    </span>
+    <span>
+        <input class="form-check-input" type="checkbox" id="ncurses">
+        <label class="form-check-label" for="ncurses">
+            #ncurses
+        </label>
+    </span>
+</div>
+<table id="projects">
+    <tbody>
+    <tr data-tags="c wasm antlr">
+        <td><A href="https://github.com/kign/c4wa"><img src="img/c4wa.png" alt="[c4wa]"></A></td>
+        <td>
+            <div>
+                <div>Compiler from a subset of C to Web Assembly Text (WAT)</div>
+                <div>A compiler from a subset of C to Web Assembly Text format. While not a full C implementation, it
+                    supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers
+                    while
+                    generating a compact, readable and efficient WAT/WASM code.
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="bootstrap js css jquery">
+        <td><A href="https://github.com/kign/kign.github.io"><img src="img/kign.png" alt="[kign.github.io]"></A></td>
+        <td>
+            <div>
+                <div>Source code for this website</div>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="react js">
+        <td><A href="https://github.com/kign/react-cal"><img src="img/react-cal.png" alt="[React Calendar]"></A></td>
+        <td>
+            <div>Simple calendar/Todo list in ReactJS</div>
+            <div>&nbsp;</div>
+            <div>Live demo: <A href="https://kign.github.io/react-cal/">https://kign.github.io/react-cal/</A></div>
+        </td>
+    </tr>
+    <tr data-tags="javafx java jni">
+        <td><A href="https://github.com/kign/life/tree/master/lifefx"><img
+                src="https://github.com/kign/life/blob/master/lifefx/resources/net/inet_lab/life/ui/Icon.png?raw=true"
+                alt="[]"></A></td>
+        <td>
+            <div>JavaFX demo for Game of Life</div>
+            <div>Conway's Game of Life with JavaFX-based UI, plugging in a C library via JNI.</div>
+        </td>
+    </tr>
+    <tr data-tags="c">
+        <td><A href="https://github.com/kign/life/tree/master/lib"><img src="img/life-lib.png" alt="[]"></A></td>
+        <td>
+            <div>Optimized C library for Game of Life</div>
+        </td>
+    </tr>
+    <tr data-tags="python pypi pni">
+        <td><A href="https://github.com/kign/life/tree/master/pni"><img src="img/life-pni.png" alt="[]"></A></td>
+        <td>
+            <div>Low-level Python package for Game Of Life API</div>
+            <div>&nbsp;</div>
+            <div>PyPi link: <A href="https://pypi.org/project/conway-life/">https://pypi.org/project/conway-life/</A>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="python pypi flask">
+        <td><A href="https://github.com/kign/life/tree/master/py-web"><img src="img/life-pyweb.png" alt="[]"></A></td>
+        <td>
+            <div>Python package for Game of Life Web UI</div>
+            <div>&nbsp;</div>
+            <div>PyPi link: <A href="https://pypi.org/project/life-web-ui/">https://pypi.org/project/life-web-ui/</A>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="wasm js">
+        <td><A href="https://github.com/kign/life/tree/master/wasm"><img src="img/life-wasm.png" alt="[]"></A></td>
+        <td>
+            <div>Native Web Assembly implementation for Game of Life</div>
+            <div>&nbsp;</div>
+            <div>Live demo: <A href="https://kign.github.io/life/life-web.html">https://kign.github.io/life/life-web.html</A>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="java sql jdbc mvn">
+        <td><A href="https://github.com/kign/"><img src="img/any-db.png" alt="[any-db]"></A></td>
+        <td>
+            <div>Database utilities</div>
+            <div>Lots of Java code (almost 10,000 lines!), mostly implementing some typical database tasks in a uniform
+                way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto,
+                hive and sqlserver.<br>
+                There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser
+                authentication on every query, and an advanced interactive shell with table/column name completion,
+                saved history and terminal width-adjusted output formatting. There are also convenient bash wrappers for
+                all included utilities.
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="ts js wasm zig webpack">
+        <td><A href="https://github.com/kign/js-billiard"><img src="img/js-billiard.png" alt="[js-billiard]"></A></td>
+        <td>
+            <div>Billiard game in JavaScript</div>
+            <div>A showcase for an elastic collision algorithm <i>and</i> a TypeScript
+                programming. Elastic collision is implemented in Zig (a new language which is basically an improved C)
+                compiled into Web Assembly.
+            </div>
+            <div>Live demo: <A href="https://kign.github.io/js-billiard">https://kign.github.io/js-billiard</A></div>
+        </td>
+    </tr>
+    <tr data-tags="java gwt">
+        <td><A href="https://github.com/kign/"><img src="img/xonix.png" alt="[xonix]"></A></td>
+        <td>
+            <div>Xonix</div>
+            <div>That’s the only project originally written more than 10 years ago. “Xonix” is a very old terminal game
+                I saw in my high school days; when I learned about Google Web Toolkit making it possible to implement
+                interactive applications on the Web, I used it for implementation. Code is written entirely in Java and
+                transcoded to JavaScript with GWT.
+            </div>
+            <div>Live demo: <A href="https://kign.github.io/xonix">https://kign.github.io/xonix</A></div>
+        </td>
+    </tr>
+    <tr data-tags="ncurses java js teavm">
+        <td><A href="https://github.com/kign/starwars"><img src="img/starwars.png" alt="[starwars]"></A></td>
+        <td>
+            <div>Starwars: simultaneous programming for terminal and for Web</div>
+            <div>A simple exercise in Java using lanterna, a popular ncurses library for Java. It also provided a Web
+                version with Java to JavaScript transcoding using TeaVM.
+            </div>
+            <div>Live demo: <A href="https://kign.github.io/starwars/starwars.html">https://kign.github.io/starwars/starwars.html</A>
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="python pypi">
+        <td><A href="https://github.com/kign/pkg-inetlab"><img src="img/inetlab.png" alt="[]"></A></td>
+        <td>
+            <div>Python helper libraries</div>
+            <div>Large collection of Python utilities, which at some point I decided to accumulate under one published
+                package. All of the Python tools listed elsewhere use some utilities from this package.<br>
+                Among other things, it has an email send utility which works both with a typical SMTP server and with
+                Google Gmail API.
+            </div>
+            <div>PyPi link: <A href="https://pypi.org/project/inetlab/">https://pypi.org/project/inetlab/</A></div>
+        </td>
+    </tr>
+    <tr data-tags="js chrome">
+        <td><A href="https://github.com/kign/hcal"><img src="img/hcal.png" alt="[]"></A></td>
+        <td>
+            <div>Hebrew calendar</div>
+            <div>I have written several handy Chrome extensions, but that’s the only one I managed to actually publish
+                in the Chrome Web Store (wasn't a simple undertaking). It’s main differentiator vs many other Hebrew
+                calendars available online is that it shows the Hebrew month/year not as an overlay over a Gregorian
+                calendar, but by itself. Visual representation of the 19 year metonic cycle (corresponding to 235 lunar
+                months) is also nice.
+            </div>
+            <div>Chrome Web Store link: <A href="https://chrome.google.com/webstore/detail/real-jewish-calendar/lgfllfljkpaekhehknpnalicagjllhmn?hl=en
+">Real Jewish Calendar</A></div>
+        </td>
+    </tr>
+    <tr data-tags="rest python js">
+        <td><A href="https://github.com/kign/"><img src="img/board.png" alt="[board]"></A></td>
+        <td>
+            <div>Collaborative Programming Board</div>
+            <div>Not 100% finished, but the idea was to make a collaborative JavaScript programming
+                environment on a simple board, coordinated between participants via a server with a Restful API
+            </div>
+        </td>
+    </tr>
+    <tr data-tags="python bootstrap js jquery flask">
+        <td><A href="https://github.com/kign/url-shortener"><img src="img/url-shortener.png" alt="[URL shortener]"></A>
+        </td>
+        <td>
+            <div>URL shortener</div>
+            <div>A basic Web shortener implementation written in Python3 (backend) and Bootstrap 5 (UI), using free
+                Google Firestore as NoSQL database backend. It supports syndicated logins with Google or Microsoft.
+            </div>
+            <div>Live deployment: <A href="https://ign.us/">ign.us</A></div>
+        </td>
+    </tr>
+    <tr data-tags="chrome js">
+        <td><A href="https://github.com/kign/dw-new-comments"><img src="img/dw-new-comments.png" alt="[]"></A></td>
+        <td>
+            <div>New comments marker for Dreamwidth.org</div>
+            <div>While not published, this is a fully functional Google Chrome extension which
+                adds a markup for newly added used comments on popular blogging site
+                <A href="https://www.dreamwidth.org/">Dreamwidth.org</A>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
