@@ -1,0 +1,15 @@
+{
+  "c" : "C",
+  "react" :  "React",
+  "js" :  "Javascript",
+  "antlr" :  "Antlr4",
+  "javafx" :  "JavaFX",
+  "python" :  "Python",
+  "pypi" : "PyPi",
+  "jquery" : "jQuery",
+  "wasm" :  "WebAssembly",
+  "pni" : "Python C interface",
+  "java" :  "Java",
+  "bootstrap" :  "Bootstrap",
+  "jni" : "JNI"
+}

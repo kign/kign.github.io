@@ -1,0 +1,44 @@
+[
+  {
+    "name" : "c4wa",
+    "tags": ["c", "wasm", "antlr"],
+    "header" : "Compiler from a subset of C to Web Assembly Text (WAT)",
+    "body": ["A compiler from a subset of C to Web Assembly Text format. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code"]
+  },
+  {
+    "name" : "kign.github.io",
+    "img" : "img/kign.png",
+    "tags": ["bootstrap", "js", "jquery"],
+    "header" : "Source code for this personal page"
+  },
+  {
+    "name" : "react-cal",
+    "tags": ["react", "js"],
+    "header" : "Simple calendar/Todo list in ReactJS",
+    "body": [""],
+    "footer": ["Live demo", "https://kign.github.io/react-cal/", "https://kign.github.io/react-cal"]
+  },
+  {
+    "name" : "lifefx",
+    "img" : "https://github.com/kign/life/blob/master/lifefx/resources/net/inet_lab/life/ui/Icon.png?raw=true",
+    "url": "https://github.com/kign/life/tree/master/lifefx",
+    "tags": ["java","javafx", "jni"],
+    "header" : "JavaFX demo for Game of Life",
+    "body": ["Conway's Game of Life with JavaFX-based UI, plugging in a C library via JNI."]
+  },
+  {
+    "name" : "life-lib",
+    "url": "https://github.com/kign/life/tree/master/lib",
+    "tags": ["c"],
+    "header" : "Optimized C library for Game of Life",
+    "body": [""]
+  },
+  {
+    "name" : "life-pni",
+    "tags": ["python", "pypi", "pni"],
+    "header" : "Low-level Python package for Game Of Life API",
+    "body": [""],
+    "footer": ["PyPi link", "https://pypi.org/project/conway-life/", "https://pypi.org/project/conway-life"],
+    "enabled" : true
+  }
+]

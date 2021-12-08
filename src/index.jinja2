@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konstantin Ignatiev</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+<p>Konstantin's coding samples</p>
+<p>Select any number of keywords:</p>
+<div id="selector">
+    {% for tag in tags %}
+    <span>
+        <input class="form-check-input" type="checkbox" id="{{ tag }}">
+        <label class="form-check-label" for="{{ tag }}">
+            {{ tag_name[tag] }} ({{ tag_count[tag] }})
+        </label>
+    </span>
+    {% endfor %}
+</div>
+<div id="projects">
+    {% for p in projects -%}
+    <div data-tags="{{ ' '.join(p.tags) }}">
+        <A href="{{ p.url }}"><img src="{{ p.img }}" alt="[{{ p.name }}]"></A>
+        <p class="header">{{ p.header }}</p>
+        {% for b in p.nody %}
+        <p>{{ b|safe }}</p>
+        {% endfor %}
+        {% if p.footer -%}
+        <p>{{ p.footer[0] }}: <A href="{{ p.footer[1] }}">{{ p.footer[2] }}</A></p>
+        {% endif -%}
+        <p class="tags">
+            {%- for tag in p.tags -%}
+               <A href="#{{ tag }}">#{{ tag }}</A><span> </span>
+            {%- endfor -%}
+        </p>
+    </div>
+    {% endfor -%}
+</div>
+</body>
+</html>
