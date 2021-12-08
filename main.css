@@ -53,6 +53,7 @@ div#projects > div {
     clear: both;
     padding-top: 10px;
     border-top: 1px solid #D0D0C0;
+    display: none;
 }
 
 div#projects p {
