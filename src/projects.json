@@ -3,19 +3,13 @@
     "name" : "c4wa",
     "tags": ["c", "wasm", "antlr"],
     "header" : "Compiler from a subset of C to Web Assembly Text (WAT)",
-    "body": ["A compiler from a subset of C to Web Assembly Text format. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code"]
-  },
-  {
-    "name" : "kign.github.io",
-    "img" : "img/kign.png",
-    "tags": ["bootstrap", "js", "jquery"],
-    "header" : "Source code for this personal page"
+    "body": ["A compiler from a subset of C to <A href=\"https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format\">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code"]
   },
   {
     "name" : "react-cal",
     "tags": ["react", "js"],
-    "header" : "Simple calendar/Todo list in ReactJS",
-    "body": [""],
+    "header" : "Calendar/Todo list in ReactJS",
+    "body": ["Notes for each day, saved into browser local storage."],
     "footer": ["Live demo", "https://kign.github.io/react-cal/", "https://kign.github.io/react-cal"]
   },
   {
@@ -31,14 +25,100 @@
     "url": "https://github.com/kign/life/tree/master/lib",
     "tags": ["c"],
     "header" : "Optimized C library for Game of Life",
-    "body": [""]
+    "body": ["Used in JNI and Python C interface packages included here; optimized to support up to 120 fps with 1200x1600 board on modern hardware."]
   },
   {
     "name" : "life-pni",
     "tags": ["python", "pypi", "pni"],
     "header" : "Low-level Python package for Game Of Life API",
-    "body": [""],
-    "footer": ["PyPi link", "https://pypi.org/project/conway-life/", "https://pypi.org/project/conway-life"],
-    "enabled" : true
+    "body": ["Integrating C library into Python package, with callback support."],
+    "footer": ["PyPi link", "https://pypi.org/project/conway-life/", "https://pypi.org/project/conway-life"]
+  },
+  {
+    "name" : "life-pyweb",
+    "url": "https://github.com/kign/life/tree/master/py-web",
+    "tags": ["python", "pypi", "flask"],
+    "header" : "Python package for Game of Life Web UI",
+    "body": ["An example of using <A href=\"https://pypi.org/project/conway-life/\">conway-life</A> package, and also a template for Python-based Web UI more generally."],
+    "footer": ["PyPi link", "https://pypi.org/project/life-web-ui/", "https://pypi.org/project/life-web-ui"]
+  },
+  {
+    "name" : "life-wasm",
+    "url": "https://github.com/kign/life/tree/master/wasm",
+    "tags": ["wasm", "js"],
+    "header" : "Native Web Assembly implementation for Game of Life",
+    "body": ["Original C implementation done natively in Web Assembly; there is also an interesting performance comparison between native C implementation and some popular Web Assembly runtimes."],
+    "footer": ["Live demo", "https://kign.github.io/life/life-web.html", "https://kign.github.io/life/life-web.html"]
+  },
+  {
+    "name" : "any-db",
+    "tags": ["java", "sql", "jdbc", "mvn"],
+    "header" : "Database utilities",
+    "body": ["Lots of Java code (almost 10,000 lines!), mostly implementing some typical database tasks in a uniform way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto, hive and sqlserver.",
+    "There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser authentication on every query, and an advanced interactive shell with table/column name completion, saved history and terminal width-adjusted output formatting. There are also convenient bash wrappers for all included utilities."]
+  },
+  {
+    "name" : "js-billiard",
+    "tags": ["ts", "js", "wasm", "zig", "webpack"],
+    "header" : "Billiard game in JavaScript",
+    "body": ["Fun game, which also is a showcase for an elastic collision algorithm and a TypeScript programming. Elastic collision is implemented in <A href=\"https://ziglang.org/\">Zig</A> (a very new language which is basically an improved C) compiled into Web Assembly."],
+    "footer": ["Live demo", "https://kign.github.io/js-billiard/", "https://kign.github.io/js-billiard"]
+  },
+  {
+    "name" : "xonix",
+    "tags": ["java", "gwt"],
+    "header" : "Xonix",
+    "body": ["The only project originally written more than 10 years ago. “Xonix” is a very old terminal game I saw back in the high school; when I learned about Google Web Toolkit making it possible to implement interactive applications on the Web, I used it for implementation. Code is written entirely in Java and transcoded to JavaScript with GWT."],
+    "footer": ["Live demo", "https://kign.github.io/xonix/", "https://kign.github.io/xonix"]
+  },
+  {
+    "name" : "starwars",
+    "tags": ["ncurses", "java", "js", "teavm"],
+    "header" : "Starwars: simultaneous programming for terminal and for Web",
+    "body": ["A simple exercise in Java using <A href=\"https://github.com/mabe02/lanterna\">lanterna</A>, a popular ncurses library for Java. It also provided a Web version with Java to JavaScript transcoding using TeaVM."],
+    "footer": ["Live demo", "https://kign.github.io/starwars/starwars.html", "https://kign.github.io/starwars/starwars.html"]
+  },
+  {
+    "name" : "pkg-inetlab",
+    "img" : "img/inetlab.png",
+    "tags": ["python", "pypi"],
+    "header" : "Python helper libraries",
+    "body": ["Large collection of Python utilities, which at some point I decided to accumulate under one published package. Most other projects included here use some utilities from this package.",
+      "Among other things, it has an email send utility which works both with a typical SMTP server while also supporting Google Gmail API."],
+    "footer": ["PyPi link", "https://pypi.org/project/inetlab/", "https://pypi.org/project/inetlab"]
+  },
+  {
+    "name" : "hcal",
+    "tags": ["js", "chrome"],
+    "header" : "Hebrew calendar",
+    "body": ["I have written several handy Chrome extensions, but that’s the only one thus far actually published in the Chrome Web Store. ",
+      "It’s main differentiator vs many other Hebrew calendars available online is that it shows the Hebrew month/year <i>not</i> as an overlay over a Gregorian calendar, but by itself. Visual representation of the 19 year metonic cycle (corresponding to 235 lunar months) is also nice."],
+    "footer": ["Chrome Web Store link", "https://chrome.google.com/webstore/detail/real-jewish-calendar/lgfllfljkpaekhehknpnalicagjllhmn?hl=en", "Real Jewish Calendar"]
+  },
+  {
+    "name" : "board",
+    "tags": ["rest", "python", "js"],
+    "header" : "Collaborative Programming Board",
+    "body": ["Not 100% finished, but the idea was to make a collaborative JavaScript programming environment on a simple board, coordinated between participants via a server with a Restful API."]
+  },
+  {
+    "name" : "url-shortener",
+    "tags": ["python", "bootstrap", "js", "jquery", "flask"],
+    "header" : "URL shortener service",
+    "body": ["A fully functional Web shortener implementation written in Python3 (backend) and Bootstrap 5 (UI), using free Google Firestore as NoSQL database backend. Supports authentication with either Google or Microsoft accounts."],
+    "footer": ["Live deployment", "https://ign.us/", "ign.us"]
+  },
+  {
+    "name" : "dw-new-comments",
+    "tags": ["chrome", "js"],
+    "header" : "New comments marker for Dreamwidth.org",
+    "body": ["While not published, this is a fully functional Google Chrome extension which adds a markup for newly added used comments on popular blogging site <A href=\"https://www.dreamwidth.org/\">Dreamwidth.org</A>"]
+  },
+  {
+    "name" : "kign.github.io",
+    "img" : "img/kign.png",
+    "tags": ["bootstrap", "js", "jquery", "python"],
+    "header" : "Source code for this personal page",
+    "body" : ["Static page generated from <code>Jinja2</code> template, with animation courtesy of jQuery"]
   }
 ]

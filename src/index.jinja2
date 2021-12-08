@@ -16,8 +16,8 @@
     <script src="main.js"></script>
 </head>
 <body>
-<p>Konstantin's coding samples</p>
-<p>Select any number of keywords:</p>
+<h1>Konstantin's coding samples</h1>
+<div id="cta">Select one or more keywords:</div>
 <div id="selector">
     {% for tag in tags %}
     <span>
@@ -33,7 +33,7 @@
     <div data-tags="{{ ' '.join(p.tags) }}">
         <A href="{{ p.url }}"><img src="{{ p.img }}" alt="[{{ p.name }}]"></A>
         <p class="header">{{ p.header }}</p>
-        {% for b in p.nody %}
+        {% for b in p.body %}
         <p>{{ b|safe }}</p>
         {% endfor %}
         {% if p.footer -%}
@@ -41,7 +41,7 @@
         {% endif -%}
         <p class="tags">
             {%- for tag in p.tags -%}
-               <A href="#{{ tag }}">#{{ tag }}</A><span> </span>
+               <A href="#{{ tag }}">#{{ tag_name[tag] }}</A><span> </span>
             {%- endfor -%}
         </p>
     </div>

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap');
+
 body {
     margin: 10px;
-    /*background-color: antiquewhite;*/
-    /*background-color: azure;*/
     background-color: #f0f0f0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 a {
@@ -14,13 +16,21 @@ a:hover {
     background-color: yellow;
 }
 
+div#cta {
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+}
+
 div#selector {
     border: 1px grey dotted;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
+    padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
+    line-height: 200%;
 }
 
 div#selector span{
@@ -37,21 +47,25 @@ div#projects img {
     width: 100px;
     height: 100px;
     margin-right: 10px;
-    margin-bottom: 10px;
 }
 
 div#projects > div {
     clear: both;
-    /*border: 1px solid red;*/
     padding-top: 10px;
     border-top: 1px solid #D0D0C0;
 }
 
+div#projects p {
+    margin-block-start: -4px;
+    margin-block-end: 6px;
+}
+
 div#projects p.header {
     font-size: larger;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 div#projects p.tags {
     font-size: smaller;
+    margin-block-start: 2px;
 }

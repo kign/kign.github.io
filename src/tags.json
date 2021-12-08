@@ -11,5 +11,17 @@
   "pni" : "Python C interface",
   "java" :  "Java",
   "bootstrap" :  "Bootstrap",
-  "jni" : "JNI"
+  "jni" : "JNI",
+  "flask" :  "Flask",
+  "sql" : "SQL",
+  "jdbc" : "JDBC",
+  "mvn" :  "Maven",
+  "ts" : "Typescript",
+  "zig" :  "Zig",
+  "webpack" :  "Webpack",
+  "gwt" :  "GWT",
+  "ncurses" :  "ncurses",
+  "teavm" : "TeaVM",
+  "chrome" :  "Chrome",
+  "rest" : "RESTful API"
 }
