@@ -3,7 +3,8 @@
     "name" : "c4wa",
     "tags": ["c", "wasm", "antlr"],
     "header" : "Compiler from a subset of C to Web Assembly Text (WAT)",
-    "body": ["A compiler from a subset of C to <A href=\"https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format\">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code"]
+    "body": ["A compiler from a subset of C to <A href=\"https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format\">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code."],
+    "footer" : ["Download page", "https://github.com/kign/c4wa/releases", "https://github.com/kign/c4wa/releases"]
   },
   {
     "name" : "react-cal",
@@ -25,10 +26,11 @@
     "url": "https://github.com/kign/life/tree/master/lib",
     "tags": ["c"],
     "header" : "Optimized C library for Game of Life",
-    "body": ["Used in JNI and Python C interface packages included here; optimized to support up to 120 fps with 1200x1600 board on modern hardware."]
+    "body": ["Used in JNI and Python C interface packages included here; optimized to support up to 120 fps with 1200x1600 board on modern hardware (single-thread mode)."]
   },
   {
     "name" : "life-pni",
+    "url": "https://github.com/kign/life/tree/master/pni",
     "tags": ["python", "pypi", "pni"],
     "header" : "Low-level Python package for Game Of Life API",
     "body": ["Integrating C library into Python package, with callback support."],
@@ -47,35 +49,37 @@
     "url": "https://github.com/kign/life/tree/master/wasm",
     "tags": ["wasm", "js"],
     "header" : "Native Web Assembly implementation for Game of Life",
-    "body": ["Original C implementation done natively in Web Assembly; there is also an interesting performance comparison between native C implementation and some popular Web Assembly runtimes."],
+    "body": ["Original C implementation done natively in Web Assembly; there is also an interesting performance comparison between native implementation and some popular Web Assembly runtimes."],
     "footer": ["Live demo", "https://kign.github.io/life/life-web.html", "https://kign.github.io/life/life-web.html"]
   },
   {
     "name" : "any-db",
     "tags": ["java", "sql", "jdbc", "mvn"],
     "header" : "Database utilities",
-    "body": ["Lots of Java code (almost 10,000 lines!), mostly implementing some typical database tasks in a uniform way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto, hive and sqlserver.",
-    "There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser authentication on every query, and an advanced interactive shell with table/column name completion, saved history and terminal width-adjusted output formatting. There are also convenient bash wrappers for all included utilities."]
+    "body": ["Lots of Java code (almost 10,000 lines!), mostly implementing typical database tasks in a uniform way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto, hive and sqlserver.",
+      "There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser authentication on every query, and an advanced interactive shell with table/column name completion, saved history and terminal width-adjusted output formatting.",
+      "Bash wrappers for all utilities included."]
   },
   {
     "name" : "js-billiard",
     "tags": ["ts", "js", "wasm", "zig", "webpack"],
     "header" : "Billiard game in JavaScript",
-    "body": ["Fun game, which also is a showcase for an elastic collision algorithm and a TypeScript programming. Elastic collision is implemented in <A href=\"https://ziglang.org/\">Zig</A> (a very new language which is basically an improved C) compiled into Web Assembly."],
+    "body": ["Fun game, which also is a showcase for an <A href=\"https://en.wikipedia.org/wiki/Elastic_collision\">elastic collision</A> algorithm and a TypeScript programming. Elastic collision is implemented in <A href=\"https://ziglang.org/\">Zig</A> (a very new language which is basically an improved C) compiled into Web Assembly."],
     "footer": ["Live demo", "https://kign.github.io/js-billiard/", "https://kign.github.io/js-billiard"]
   },
   {
     "name" : "xonix",
     "tags": ["java", "gwt"],
     "header" : "Xonix",
-    "body": ["The only project originally written more than 10 years ago. “Xonix” is a very old terminal game I saw back in the high school; when I learned about Google Web Toolkit making it possible to implement interactive applications on the Web, I used it for implementation. Code is written entirely in Java and transcoded to JavaScript with GWT."],
+    "body": ["The only project originally written more than 10 years ago. “Xonix” is a very old terminal game I saw back in the high school; when I learned about the original version of Google Web Toolkit making it possible to implement interactive applications on the Web, I used it for this implementation. Code is written entirely in Java and transcoded to JavaScript with GWT v1."],
     "footer": ["Live demo", "https://kign.github.io/xonix/", "https://kign.github.io/xonix"]
   },
   {
     "name" : "starwars",
     "tags": ["ncurses", "java", "js", "teavm"],
     "header" : "Starwars: simultaneous programming for terminal and for Web",
-    "body": ["A simple exercise in Java using <A href=\"https://github.com/mabe02/lanterna\">lanterna</A>, a popular ncurses library for Java. It also provided a Web version with Java to JavaScript transcoding using TeaVM."],
+    "body": ["An exercise in Java using <A href=\"https://github.com/mabe02/lanterna\">lanterna</A>, a popular ncurses library. There is also a Web version with Java to JavaScript transcoding using TeaVM.",
+      "Could be adapted to support any other ncurses/terminal games."],
     "footer": ["Live demo", "https://kign.github.io/starwars/starwars.html", "https://kign.github.io/starwars/starwars.html"]
   },
   {
@@ -119,6 +123,6 @@
     "img" : "img/kign.png",
     "tags": ["bootstrap", "js", "jquery", "python"],
     "header" : "Source code for this personal page",
-    "body" : ["Static page generated from <code>Jinja2</code> template, with animation courtesy of jQuery"]
+    "body" : ["Static page generated from <code>Jinja2</code> template, with animation courtesy of jQuery."]
   }
 ]

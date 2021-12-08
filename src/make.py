@@ -36,10 +36,7 @@ def main():
         fh.write(t.render(projects=projs, 
                           tags=sorted(tag_count.keys(), key=lambda x: -tag_count[x]),
                           tag_name=tag_name,
-                          tag_count=tag_count)
-                          
-                 
-                 )
+                          tag_count=tag_count))
 
 
 main()

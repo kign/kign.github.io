@@ -201,8 +201,9 @@
         <A href="https://github.com/kign/c4wa"><img src="img/c4wa.png" alt="[c4wa]"></A>
         <p class="header">Compiler from a subset of C to Web Assembly Text (WAT)</p>
         
-        <p>A compiler from a subset of C to <A href="https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code</p>
+        <p>A compiler from a subset of C to <A href="https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code.</p>
         
+        <p>Download page: <A href="https://github.com/kign/c4wa/releases">https://github.com/kign/c4wa/releases</A></p>
         <p class="tags"><A href="#c">#C</A><span> </span><A href="#wasm">#WebAssembly</A><span> </span><A href="#antlr">#Antlr4</A><span> </span></p>
     </div>
     <div data-tags="react js">
@@ -226,12 +227,12 @@
         <A href="https://github.com/kign/life/tree/master/lib"><img src="img/life-lib.png" alt="[life-lib]"></A>
         <p class="header">Optimized C library for Game of Life</p>
         
-        <p>Used in JNI and Python C interface packages included here; optimized to support up to 120 fps with 1200x1600 board on modern hardware.</p>
+        <p>Used in JNI and Python C interface packages included here; optimized to support up to 120 fps with 1200x1600 board on modern hardware (single-thread mode).</p>
         
         <p class="tags"><A href="#c">#C</A><span> </span></p>
     </div>
     <div data-tags="python pypi pni">
-        <A href="https://github.com/kign/life-pni"><img src="img/life-pni.png" alt="[life-pni]"></A>
+        <A href="https://github.com/kign/life/tree/master/pni"><img src="img/life-pni.png" alt="[life-pni]"></A>
         <p class="header">Low-level Python package for Game Of Life API</p>
         
         <p>Integrating C library into Python package, with callback support.</p>
@@ -252,7 +253,7 @@
         <A href="https://github.com/kign/life/tree/master/wasm"><img src="img/life-wasm.png" alt="[life-wasm]"></A>
         <p class="header">Native Web Assembly implementation for Game of Life</p>
         
-        <p>Original C implementation done natively in Web Assembly; there is also an interesting performance comparison between native C implementation and some popular Web Assembly runtimes.</p>
+        <p>Original C implementation done natively in Web Assembly; there is also an interesting performance comparison between native implementation and some popular Web Assembly runtimes.</p>
         
         <p>Live demo: <A href="https://kign.github.io/life/life-web.html">https://kign.github.io/life/life-web.html</A></p>
         <p class="tags"><A href="#wasm">#WebAssembly</A><span> </span><A href="#js">#Javascript</A><span> </span></p>
@@ -261,9 +262,11 @@
         <A href="https://github.com/kign/any-db"><img src="img/any-db.png" alt="[any-db]"></A>
         <p class="header">Database utilities</p>
         
-        <p>Lots of Java code (almost 10,000 lines!), mostly implementing some typical database tasks in a uniform way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto, hive and sqlserver.</p>
+        <p>Lots of Java code (almost 10,000 lines!), mostly implementing typical database tasks in a uniform way regardless of a backend. Among supported backends are PosgreSQL, MySQL, Redshift, Snowflake, Presto, hive and sqlserver.</p>
         
-        <p>There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser authentication on every query, and an advanced interactive shell with table/column name completion, saved history and terminal width-adjusted output formatting. There are also convenient bash wrappers for all included utilities.</p>
+        <p>There is also a Java RMI-server which keeps JDBC connection alive making it possible to bypass browser authentication on every query, and an advanced interactive shell with table/column name completion, saved history and terminal width-adjusted output formatting.</p>
+        
+        <p>Bash wrappers for all utilities included.</p>
         
         <p class="tags"><A href="#java">#Java</A><span> </span><A href="#sql">#SQL</A><span> </span><A href="#jdbc">#JDBC</A><span> </span><A href="#mvn">#Maven</A><span> </span></p>
     </div>
@@ -271,7 +274,7 @@
         <A href="https://github.com/kign/js-billiard"><img src="img/js-billiard.png" alt="[js-billiard]"></A>
         <p class="header">Billiard game in JavaScript</p>
         
-        <p>Fun game, which also is a showcase for an elastic collision algorithm and a TypeScript programming. Elastic collision is implemented in <A href="https://ziglang.org/">Zig</A> (a very new language which is basically an improved C) compiled into Web Assembly.</p>
+        <p>Fun game, which also is a showcase for an <A href="https://en.wikipedia.org/wiki/Elastic_collision">elastic collision</A> algorithm and a TypeScript programming. Elastic collision is implemented in <A href="https://ziglang.org/">Zig</A> (a very new language which is basically an improved C) compiled into Web Assembly.</p>
         
         <p>Live demo: <A href="https://kign.github.io/js-billiard/">https://kign.github.io/js-billiard</A></p>
         <p class="tags"><A href="#ts">#Typescript</A><span> </span><A href="#js">#Javascript</A><span> </span><A href="#wasm">#WebAssembly</A><span> </span><A href="#zig">#Zig</A><span> </span><A href="#webpack">#Webpack</A><span> </span></p>
@@ -280,7 +283,7 @@
         <A href="https://github.com/kign/xonix"><img src="img/xonix.png" alt="[xonix]"></A>
         <p class="header">Xonix</p>
         
-        <p>The only project originally written more than 10 years ago. “Xonix” is a very old terminal game I saw back in the high school; when I learned about Google Web Toolkit making it possible to implement interactive applications on the Web, I used it for implementation. Code is written entirely in Java and transcoded to JavaScript with GWT.</p>
+        <p>The only project originally written more than 10 years ago. “Xonix” is a very old terminal game I saw back in the high school; when I learned about the original version of Google Web Toolkit making it possible to implement interactive applications on the Web, I used it for this implementation. Code is written entirely in Java and transcoded to JavaScript with GWT v1.</p>
         
         <p>Live demo: <A href="https://kign.github.io/xonix/">https://kign.github.io/xonix</A></p>
         <p class="tags"><A href="#java">#Java</A><span> </span><A href="#gwt">#GWT</A><span> </span></p>
@@ -289,7 +292,9 @@
         <A href="https://github.com/kign/starwars"><img src="img/starwars.png" alt="[starwars]"></A>
         <p class="header">Starwars: simultaneous programming for terminal and for Web</p>
         
-        <p>A simple exercise in Java using <A href="https://github.com/mabe02/lanterna">lanterna</A>, a popular ncurses library for Java. It also provided a Web version with Java to JavaScript transcoding using TeaVM.</p>
+        <p>An exercise in Java using <A href="https://github.com/mabe02/lanterna">lanterna</A>, a popular ncurses library. There is also a Web version with Java to JavaScript transcoding using TeaVM.</p>
+        
+        <p>Could be adapted to support any other ncurses/terminal games.</p>
         
         <p>Live demo: <A href="https://kign.github.io/starwars/starwars.html">https://kign.github.io/starwars/starwars.html</A></p>
         <p class="tags"><A href="#ncurses">#ncurses</A><span> </span><A href="#java">#Java</A><span> </span><A href="#js">#Javascript</A><span> </span><A href="#teavm">#TeaVM</A><span> </span></p>
@@ -345,7 +350,7 @@
         <A href="https://github.com/kign/kign.github.io"><img src="img/kign.png" alt="[kign.github.io]"></A>
         <p class="header">Source code for this personal page</p>
         
-        <p>Static page generated from <code>Jinja2</code> template, with animation courtesy of jQuery</p>
+        <p>Static page generated from <code>Jinja2</code> template, with animation courtesy of jQuery.</p>
         
         <p class="tags"><A href="#bootstrap">#Bootstrap</A><span> </span><A href="#js">#Javascript</A><span> </span><A href="#jquery">#jQuery</A><span> </span><A href="#python">#Python</A><span> </span></p>
     </div>

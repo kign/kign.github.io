@@ -4,7 +4,8 @@ $(function () {
   $('div#selector input[type="checkbox"]').on('click', function() {
     update ();
   });
-  $('p.tags a').on('click', function () {
+  $('p.tags a').on('click', function (evt) {
+    evt.preventDefault();
     const tag = $(this).attr('href').substr(1);
     $('div#selector input:checkbox').each(function () {
       $(this).prop('checked', this.id === tag);
