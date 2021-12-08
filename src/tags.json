@@ -23,5 +23,6 @@
   "ncurses" :  "ncurses",
   "teavm" : "TeaVM",
   "chrome" :  "Chrome",
-  "rest" : "RESTful API"
+  "rest" : "RESTful API",
+  "gradle" : "Gradle"
 }

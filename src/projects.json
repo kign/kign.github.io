@@ -1,7 +1,7 @@
 [
   {
     "name" : "c4wa",
-    "tags": ["c", "wasm", "antlr"],
+    "tags": ["java", "c", "wasm", "antlr", "gradle"],
     "header" : "Compiler from a subset of C to Web Assembly Text (WAT)",
     "body": ["A compiler from a subset of C to <A href=\"https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format\">Web Assembly Text format</A>. While not a full C implementation, it supports loops, conditionals, all of C operators, all primitive types, structs, arrays and pointers while generating a compact, readable and efficient WAT/WASM code."],
     "footer" : ["Download page", "https://github.com/kign/c4wa/releases", "https://github.com/kign/c4wa/releases"]
@@ -76,7 +76,7 @@
   },
   {
     "name" : "starwars",
-    "tags": ["ncurses", "java", "js", "teavm"],
+    "tags": ["ncurses", "java", "js", "teavm", "gradle"],
     "header" : "Starwars: simultaneous programming for terminal and for Web",
     "body": ["An exercise in Java using <A href=\"https://github.com/mabe02/lanterna\">lanterna</A>, a popular ncurses library. There is also a Web version with Java to JavaScript transcoding using TeaVM.",
       "Could be adapted to support any other ncurses/terminal games."],
