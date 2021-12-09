@@ -107,7 +107,7 @@
   },
   {
     "name" : "url-shortener",
-    "tags": ["python", "bootstrap", "js", "jquery", "flask"],
+    "tags": ["python", "bootstrap", "js", "jquery", "flask", "nosql"],
     "header" : "URL shortener service",
     "body": ["A fully functional Web shortener implementation written in Python3 (backend) and Bootstrap 5 (UI), using free Google Firestore as NoSQL database backend. Supports authentication with either Google or Microsoft accounts."],
     "footer": ["Live deployment", "https://ign.us/", "ign.us"]

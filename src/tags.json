@@ -14,6 +14,7 @@
   "jni" : "JNI",
   "flask" :  "Flask",
   "sql" : "SQL",
+  "nosql" : "NoSQL",
   "jdbc" : "JDBC",
   "mvn" :  "Maven",
   "ts" : "Typescript",

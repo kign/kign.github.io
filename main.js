@@ -4,6 +4,7 @@ $(function () {
   $('div#selector input[type="checkbox"]').on('click', function() {
     update ();
   });
+
   $('p.tags a').on('click', function (evt) {
     evt.preventDefault();
     const tag = $(this).attr('href').substr(1);
@@ -12,6 +13,13 @@ $(function () {
     });
     update ();
   });
+
+  $('document').on("pageshow",function(event){
+    if (event.persisted) {
+      update ();
+    }
+  });
+
 });
 
 function update () {
