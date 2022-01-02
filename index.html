@@ -23,7 +23,7 @@
     <span>
         <input class="form-check-input" type="checkbox" id="js">
         <label class="form-check-label" for="js">
-            Javascript (9)
+            Javascript (10)
         </label>
     </span>
     
@@ -44,7 +44,14 @@
     <span>
         <input class="form-check-input" type="checkbox" id="wasm">
         <label class="form-check-label" for="wasm">
-            WebAssembly (3)
+            WebAssembly (4)
+        </label>
+    </span>
+    
+    <span>
+        <input class="form-check-input" type="checkbox" id="c">
+        <label class="form-check-label" for="c">
+            C (3)
         </label>
     </span>
     
@@ -52,13 +59,6 @@
         <input class="form-check-input" type="checkbox" id="pypi">
         <label class="form-check-label" for="pypi">
             PyPi (3)
-        </label>
-    </span>
-    
-    <span>
-        <input class="form-check-input" type="checkbox" id="c">
-        <label class="form-check-label" for="c">
-            C (2)
         </label>
     </span>
     
@@ -236,6 +236,15 @@
         <p>Conway's Game of Life with JavaFX-based UI, plugging in a C library via JNI.</p>
         
         <p class="tags"><A href="#java">#Java</A><span> </span><A href="#javafx">#JavaFX</A><span> </span><A href="#jni">#JNI</A><span> </span></p>
+    </div>
+    <div data-tags="c js wasm">
+        <A href="https://github.com/kign/life-inf"><img src="img/life-inf.png" alt="[life-inf]"></A>
+        <p class="header">Web UI for Game of Life on true infinite board</p>
+        
+        <p>Core algorithm implemented in C and compiled to WASM with <A href="https://github.com/kign/c4wa">c4wa</A> compiler; Javascript-based UI supports Pan/Zoom with multitude</p>
+        
+        <p>Live demo: <A href="https://kign.github.io/life-inf/">https://kign.github.io/life-inf</A></p>
+        <p class="tags"><A href="#c">#C</A><span> </span><A href="#js">#Javascript</A><span> </span><A href="#wasm">#WebAssembly</A><span> </span></p>
     </div>
     <div data-tags="c">
         <A href="https://github.com/kign/life/tree/master/lib"><img src="img/life-lib.png" alt="[life-lib]"></A>
