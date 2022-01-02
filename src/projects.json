@@ -26,7 +26,7 @@
     "url": "https://github.com/kign/life-inf",
     "tags": ["c", "js", "wasm"],
     "header" : "Web UI for Game of Life on true infinite board",
-    "body": ["Core algorithm implemented in C and compiled to WASM with <A href=\"https://github.com/kign/c4wa\">c4wa</A> compiler; Javascript-based UI supports Pan/Zoom with multitude"],
+    "body": ["Core algorithm implemented in C and compiled to WASM with <A href=\"https://github.com/kign/c4wa\">c4wa</A> compiler; Javascript-based UI supports Pan/Zoom with multi-touch"],
     "footer": ["Live demo", "https://kign.github.io/life-inf/", "https://kign.github.io/life-inf"]
   },
   {
